@@ -12,7 +12,7 @@ include "./navBar.php";
 echo' <main>
 			<div id="Horizontal">
 				<div class="BlockFull">
-					<form
+					<!--<form
 						action=""
 						id="formMess"
 						class="row g-3 needs-validation"
@@ -65,8 +65,9 @@ echo' <main>
 								Send Message
 							</button>
 						</div>
-					</form>
-				</div>
+					</form>-->';
+                include "./form.php";
+				echo'</div>
 				<div class="BlockTwoPart">
 					<div class="Block1">
 						<div class="container text-center">

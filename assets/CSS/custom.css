@@ -2368,6 +2368,9 @@ form {
   margin-left: 20px;
   margin-top: 5px; }
 
+.form-example * {
+  margin: 0 !important; }
+
 input {
   border: #333333 solid 1px;
   border-radius: 15px;
@@ -2375,7 +2378,7 @@ input {
   width: 300px; }
 
 #SubscribeButton {
-  margin-top: 10px;
-  margin-left: 50px; }
+  margin-top: 10px !important;
+  margin-left: 50px !important; }
 
 /*# sourceMappingURL=custom.css.map */
