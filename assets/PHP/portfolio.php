@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Module PHP David</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
     <script src="../JS/jquery-3.6.1.min.js"></script>
 </head>
 <body>

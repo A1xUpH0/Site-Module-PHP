@@ -1,0 +1,466 @@
+// sass ./assets/scss/custom.scss ./assets/CSS/custom.css
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/forms";
+
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+    font-family: "MyFont";
+    src: url("../Fonts/seguibl.ttf");
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "MyFont", Arial, sans-serif;
+    box-sizing: border-box;
+    color: #404040;
+
+    /* border: 2px solid red; */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+}
+
+#Navbar {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 15px black;
+    z-index: 2;
+    background: #FFFFFF;
+}
+
+#Nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-bottom: 36.5vh;
+    margin-left: 60px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.NavButton {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.Navigation {
+    text-decoration: none !important;
+    color: #404040 !important;
+}
+
+#name {
+    margin-left: 40px;
+    font-size: 1.5rem;
+}
+
+.portfolio {
+    background: center no-repeat url(../Pictures/Colors_BG.jpg) !important;
+    background-size: cover!important;
+}
+
+.portfolio #Horizontal .BlockFull,
+.portfolio #Horizontal .BlockTwoPart .Block1,
+.portfolio #Horizontal .BlockTwoPart .Block2 {
+    background: #33333380 !important;
+    box-shadow: 0 0 7.5px #FFFFFF;
+}
+
+#Paysage {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    background: center url(../Pictures/Astronaut_BG.jpg);
+    background-size: cover;
+}
+
+#Paysage #Horizontal {
+    width: max-content;
+}
+
+.BlockFull,
+.BlockTwoPart {
+    width: 33vw;
+    height: 80vh;
+    margin: 10vh 0 auto 5vw;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.BlockFull {
+    border-radius: 40px;
+    box-shadow: 0 0 5px black;
+    background: #FFFFFF50;
+    backdrop-filter: blur(10px);
+}
+
+.BlockFull *,.BlockTwoPart * {
+    margin: 10px 25px auto 25px;
+}
+
+.BlockFull h1,.BlockTwoPart h1 {
+    margin: 25px auto 30px 25px;
+}
+
+.BlockFull h2,.BlockTwoPart h2 {
+    margin: 35px auto auto 25px;
+}
+
+#desc,
+#email,
+#phone,
+#address,
+.BlockFull ul,
+.WoExp,
+.edu
+{
+    margin-left: 50px;
+}
+
+.WoExp
+{
+    margin-top: 15px;
+}
+
+.BlockFull ul {
+    margin-top: 35px;
+    padding: 0;
+}
+
+.icon {
+font-size: 2rem;
+margin: 0 0 auto 0;
+}
+
+.Block1 h2 {
+    margin-top: 20px;
+}
+
+#CN {
+    margin: 0;
+    text-decoration: none;
+    color: #EF2961;
+}
+
+#pix {
+    margin: 0;
+    text-decoration: none;
+}
+
+#FlexLogo {
+    display: flex;
+}
+
+#LogoDO {
+    margin-top: 37.5px;
+    height: 75px;
+}
+
+#LogoCentre {
+    height: 150px;
+}
+
+
+.BlockTwoPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.Block1,
+.Block2 {
+    width: 100%;
+    height: 90%;
+    border-radius: 40px;
+    box-shadow: 0 0 5px black;
+    background: #FFFFFF50;
+    backdrop-filter: blur(10px);
+}
+
+.Block1 {
+    margin-bottom: 5%;
+}
+
+.Block2 {
+    margin-top: 5%;
+}
+
+.LastBlock {
+    margin-right: 5vw;
+}
+
+.col-12 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 10% !important;
+    margin-left: 0 !important;
+    margin-right: 48px !important;
+}
+
+.form-floating {
+    margin: 2.5% 2.5% !important;
+    width: 95% !important;
+    height: 10% !important
+}
+
+label {
+    padding: 3% 5% !important;
+}
+
+button {
+    margin-left: 41%;
+    padding: 1.6%;
+    border-radius: 10px;
+    background: #0d6efd;
+    color: #FFFFFF;
+}
+
+.col {
+    border: 5px yellow solid!important;
+    color: yellow;
+    font-size: 1.5rem;
+    background:red;
+    margin-top: 5%;
+    flex: 0.8 0 0%;
+    margin-left: 15%;
+}
+
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    #Navbar {
+        width: 100vw;
+        height: 7.5vh;
+    }
+
+    #Nav {
+        flex-direction: row;
+        margin-left: 60px;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+
+    .NavButton {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        margin-left: 5vw;
+    }
+
+    #name {
+        display: none;
+    }
+
+    #Portrait {
+        height: 100%;
+        width: 100vw;
+        background: url(../Pictures/Astronaut_BG.jpg) no-repeat fixed;
+        background-size: contain;
+    }
+
+    #Horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BlockFull,
+    .BlockTwoPart {
+        width: 85vw;
+        height: 50vh;
+        margin: 5vh auto 0vh 7.5vw;
+    }
+
+    .LastBlock {
+        margin-right: 5vw;
+        margin-bottom: 40vh;
+    }
+}
+
+@media (max-width: 1500px) {
+    #Navbar {
+        width: 32vw;
+        height: 100vh;
+
+    }
+
+    #Nav {
+        margin-left: 20px !important;
+    }
+
+    #LogoDO {
+        margin-top: 30px;
+        height: 55px;
+    }
+    
+    #LogoCentre {
+        height: 110px;
+    }
+}
+
+@media (max-width: 1500px) and (orientation: portrait) {
+    #Navbar {
+        width: 100vw;
+        height: 6.5vh;
+
+    }
+
+    #Nav {
+        margin-left: 60px !important;
+        margin-top: 1vh;
+    }
+}
+
+@media (max-width: 900px) {
+    form {
+        margin-top: 5% !important;
+    }
+
+    input.form-control {
+        height: 40px !important;
+        padding: 11px 12px !important;
+    }
+
+    button {
+        margin-left: 31%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    #Navbar {
+        width: 100vw;
+        height: 5vh;
+
+    }
+
+    #Nav {
+        margin-top: 10px !important;
+        margin-left: 20px !important;
+    }
+
+    .NavButton {
+        font-size: 1rem !important;
+    }
+
+    main {
+        background: url(../Pictures/Astronaut_BG.jpg);
+        background-size: cover !important;
+    }
+
+    .porfolio {
+        background-size: cover !important;
+    }
+
+    .BlockFull {
+        height: 80vh;
+    }
+
+    .BlockTwoPart {
+        margin-top: 150px;
+    }
+
+    .LastBlock {
+        margin-bottom: 25vh;
+    }
+
+    #LogoDO {
+        margin-top: 18.75px;
+        height: 37.5px;
+    }
+    
+    #LogoCentre {
+        height: 75px;
+    }
+
+}
+
+@media (max-height: 500px) {
+
+    #Navbar {
+        width: 35vw;
+        height: 100vh;
+    }
+
+    #Nav {
+        margin-top: 20vh;
+        margin-bottom: 30vh;
+        margin-left: 60px;
+    }
+
+    .NavButton {
+        font-size: 1.5rem;
+    }
+
+    #name {
+        margin-left: 30px;
+    }
+}
+
+@media (min-height: 1500px) {
+    #Nav {
+        margin-top: 1.5vh !important;
+        margin-left: 100px !important;
+    }
+
+    main {
+        background: url(../Pictures/Astronaut_BG.jpg);
+        background-size: cover !important;
+    }
+
+    .portfolio {
+        background-size: cover !important;
+    }
+
+    .LastBlock {
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+
+form {
+    margin-top: 20px;
+}
+
+.form-example {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+input {
+    border : #333333 solid 1px;
+    border-radius: 15px;
+    height: 25px;
+    width: 300px;
+}
+
+#SubscribeButton {
+    margin-top: 10px;
+    margin-left: 50px;
+}
