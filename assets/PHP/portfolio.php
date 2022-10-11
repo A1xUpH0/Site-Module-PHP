@@ -21,7 +21,7 @@ echo'<main class="portfolio">
 				<div class="BlockTwoPart">
 					<div class="Block1">
 						<img
-							src="../Pictures/Blanche-4-Ans.jpg"
+							src="../Pictures/blanche-4-Ans.jpg"
 							alt="Dessin numéro 2"
 							width="80%"
 						/>

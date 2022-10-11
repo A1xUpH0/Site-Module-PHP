@@ -86,11 +86,11 @@ h1 {
                 <div id="FlexLogo">
                     <img
                             id="LogoDO"
-                            src="./assets/Pictures/LogoDO.png"
+                            src="./assets/Pictures/logoDO.png"
                             alt="Logo de l entreprise Défi Orthographique"
                     /><img
                             id="LogoCentre"
-                            src="./assets/Pictures/LogoCentre.png"
+                            src="./assets/Pictures/logoCentre.png"
                             alt="Logo du Centre de Loisirs du Forezan"
                     />
                 </div>

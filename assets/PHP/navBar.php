@@ -1,8 +1,8 @@
 <?php
-echo'<nav id="Navbar">
+echo '<nav id="Navbar">
     <ul id="Nav">
         <li class="NavButton">
-            <a class="Navigation" href="../../index.php">PRESENTATION</a>
+            <a class="Navigation" href="../../home.php">PRESENTATION</a>
         </li>
         <li class="NavButton">
             <a class="Navigation" href="../../assets/PHP/portfolio.php"
