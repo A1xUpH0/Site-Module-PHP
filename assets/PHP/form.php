@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Module PHP David</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-</head>
-<body>
 <?php
 echo '<form action="" method="get" class="form-example">
           <div class="form-example">
@@ -17,9 +9,7 @@ echo '<form action="" method="get" class="form-example">
                 <input type="email" name="email" id="email" required>
           </div>
           <div class="form-example">
-                <input type="submit" value="Subscribe!">
+                <input id="SubscribeButton" type="submit" value="Subscribe!">
           </div>
     </form>';
-?>
-</body>
-</html>
+
