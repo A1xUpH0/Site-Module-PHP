@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-include "./assets/PHP/NavBar.php";
+include "./assets/PHP/navBar.php";
 echo'
 <main>
     <section id="Horizontal">

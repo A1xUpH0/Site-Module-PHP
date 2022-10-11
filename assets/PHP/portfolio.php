@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-include "./NavBar.php";
+include "./navBar.php";
 echo'<main class="portfolio">
 			<div id="Horizontal">
 				<div class="BlockFull">
