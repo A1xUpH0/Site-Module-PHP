@@ -1,5 +1,4 @@
-<?php
-echo '<nav id="Navbar">
+<nav id="Navbar">
     <ul id="Nav">
         <li class="NavButton">
             <a class="Navigation" href="index.php?page=home">PRESENTATION</a>
@@ -16,5 +15,4 @@ echo '<nav id="Navbar">
         </li>
     </ul>
     <p id="name">© David ALLAIS</p>
-</nav>';
-?>
+</nav>'

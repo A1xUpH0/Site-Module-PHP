@@ -1,8 +1,8 @@
 <?php
 include "./assets/PHP/Object/navBar.php";
-echo'
+?>
 <body>
-<main>
+    <main>
 			<div id="Horizontal">
 				<div class="BlockFull">
 					<!--<form
@@ -58,9 +58,10 @@ echo'
 								Send Message
 							</button>
 						</div>
-					</form>-->';
-                include "./assets/PHP/Object/form.php";
-				echo '</div>
+					</form>-->
+                <?php include "./assets/PHP/Object/form.php";?>
+
+                </div>
 				<div class="BlockTwoPart">
 					<div class="Block1">
 						<div class="container text-center">
@@ -79,8 +80,7 @@ echo'
 				</div>
 			</div>
 		</main>
-		<script src="../../JS/script.js"></script>
-<script src="../../JS/form.js"></script>
-</body>
-</html>';
-?>
+		<script src="./assets/JS/script.js"></script>
+        <script src="./assets/JS/form.js"></script>
+    </body>
+</html>

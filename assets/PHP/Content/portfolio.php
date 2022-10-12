@@ -1,6 +1,6 @@
 <?php
 include "./assets/PHP/Object/navBar.php";
-echo '
+?>
 <body>
 <main class="portfolio">
 			<div id="Horizontal">
@@ -34,9 +34,6 @@ echo '
 				<div class="BlockFull LastBlock"></div>
 			</div>
 		</main>
-		<script src="../../JS/script.js"></script>
+		<script src="./assets/JS/script.js"></script>
 		</body>
 </html>
-';
-?>
-

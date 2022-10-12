@@ -1,13 +1,13 @@
 <?php
 include "./assets/PHP/Object/navBar.php";
-echo '
+?>
 <body>
 <main>
 			<section id="Horizontal">
 				<div class="BlockFull">
 					<h1>David ALLAIS</h1>
 					<p id="desc">
-						Currently training as a Web & App Developer, I\'m looking
+						Currently training as a Web & App Developer, I'm looking
 						for a block release apprenticeship
                         </p>
 					<h2>Personal Details</h2>
@@ -88,5 +88,4 @@ echo '
 			</section>
 		</main>
 		<script src="./assets/JS/script.js"></script>
-	</body>';
-?>
+	</body>
