@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Module PHP David</title>
-    <link rel="stylesheet" href="../CSS/custom.css">
-    <script src="../JS/jquery-3.6.1.min.js"></script>
-</head>
-<body>
 <?php
-include "./navBar.php";
-echo'<main class="portfolio">
+include "./assets/PHP/Object/navBar.php";
+echo '
+<body>
+<main class="portfolio">
 			<div id="Horizontal">
 				<div class="BlockFull">
 					<img
-						src="../Pictures/jules.jpg"
+						src="./assets/Pictures/jules.jpg"
 						alt="Dessin numéro 1"
 						width="80%"
 					/>
@@ -21,14 +14,14 @@ echo'<main class="portfolio">
 				<div class="BlockTwoPart">
 					<div class="Block1">
 						<img
-							src="../Pictures/blanche-4-Ans.jpg"
+							src="./assets/Pictures/blanche-4-Ans.jpg"
 							alt="Dessin numéro 2"
 							width="80%"
 						/>
 					</div>
 					<div class="Block2">
 						<img
-							src="../Pictures/que_faire_dessisn_enfants_01.jpg"
+							src="./assets/Pictures/que_faire_dessisn_enfants_01.jpg"
 							alt="Dessin numéro 3"
 							width="80%"
 						/>
@@ -40,9 +33,10 @@ echo'<main class="portfolio">
 				</div>
 				<div class="BlockFull LastBlock"></div>
 			</div>
-		</main>';
-?>
-<script src="../JS/script.js"></script>
-
-</body>
+		</main>
+		<script src="../../JS/script.js"></script>
+		</body>
 </html>
+';
+?>
+

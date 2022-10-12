@@ -1,15 +1,8 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Module PHP David</title>
-    <link rel="stylesheet" href="../CSS/custom.css">
-    <script src="../JS/jquery-3.6.1.min.js"></script>
-</head>
-<body>
 <?php
-include "./navBar.php";
-echo' <main>
+include "./assets/PHP/Object/navBar.php";
+echo'
+<body>
+<main>
 			<div id="Horizontal">
 				<div class="BlockFull">
 					<!--<form
@@ -66,8 +59,8 @@ echo' <main>
 							</button>
 						</div>
 					</form>-->';
-                include "./form.php";
-				echo'</div>
+                include "./assets/PHP/Object/form.php";
+				echo '</div>
 				<div class="BlockTwoPart">
 					<div class="Block1">
 						<div class="container text-center">
@@ -85,9 +78,9 @@ echo' <main>
 					<div class="Block2"></div>
 				</div>
 			</div>
-		</main>';
-?>
-<script src="../JS/script.js"></script>
-<script src="../JS/form.js"></script>
+		</main>
+		<script src="../../JS/script.js"></script>
+<script src="../../JS/form.js"></script>
 </body>
-</html>
+</html>';
+?>
