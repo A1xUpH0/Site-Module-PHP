@@ -1,7 +1,9 @@
 <?php
+include './assets/PHP/Head/head.php';
+echo'<body>';
 include "./assets/PHP/Object/navBar.php";
 ?>
-<body>
+
 <main>
 			<section id="Horizontal">
 				<div class="BlockFull">

@@ -1,7 +1,8 @@
 <?php
+include './assets/PHP/Head/head.php';
+echo'<body>';
 include "./assets/PHP/Object/navBar.php";
 ?>
-<body>
 <main class="portfolio">
 			<div id="Horizontal">
 				<div class="BlockFull">

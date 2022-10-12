@@ -1,49 +1,31 @@
 <?php
 
 if($_GET['page'] == 'home'){
-    include './assets/PHP/Head/homeHead.php';
+    $title = "Module PHP David | HOMEPAGE";
+    $desc = "Homepage | Un petit site pour montrer que je sais utiliser les langage 
+    HTML, CSS, PHP.";
     include './assets/PHP/Content/home.php';
 }
 elseif($_GET['page'] == 'portfolio'){
-    include './assets/PHP/Head/portfolioHead.php';
+    $title = "Module PHP David | PORTFOLIO";
+    $desc = "Portfolio | Assortiment de dessins réalisés par moi même.";
     include './assets/PHP/Content/portfolio.php';
 }
 elseif($_GET['page'] == 'contact'){
-    include './assets/PHP/Head/contactHead.php';
+    $title = "Module PHP David | CONTACT";
+    $desc = "Contact | page contact du mon site, permettant de me contacter via un 
+    formulaire.";
     include './assets/PHP/Content/contact.php';
 }
-
-/*if($_GET['page'] == 'home'){
-    include './assets/PHP/Content/home.php';
+else{
+    $title = "Module PHP David | COLOR";
+    $desc = "Color | Une page permettant de choisir aléatoirement 2 couleurs et de 
+    les fusionner pour en créer une nouvelle.";
+    include './assets/PHP/Head/head.php';
+    echo"<body>";
+    include "./assets/PHP/Object/navBar.php";
+    echo"<h1>";
+    include './color.php';
+    echo"</h1></body></html>";
 }
-elseif($_GET['page'] == 'portfolio'){
-    include './assets/PHP/Content/portfolio.php';
-}
-elseif($_GET['page'] == 'contact'){
-    include './assets/PHP/Content/contact.php';
-}*/
-
-/*switch ($_SERVER['REQUEST_URI']) {
-    case '?page=home':
-        include './assets/PHP/Head/homeHead.php';
-        break;
-    case '/?page=portfolio':
-        include './assets/PHP/Head/portfolioHead.php';
-        break;
-    case '/?page=contact':
-        include './assets/PHP/Head/contactHead.php';
-        break;
-}*/
-
-/*switch ($_SERVER['REQUEST_URI']) {
-    case '/?page=home':
-        include './assets/PHP/Content/home.php';
-        break;
-    case '/?page=portfolio':
-        include './assets/PHP/Content/portfolio.php';
-        break;
-    case '/?page=contact':
-        include './assets/PHP/Content/contact.php';
-        break;
-}*/
 ?>
