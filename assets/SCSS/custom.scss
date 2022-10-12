@@ -215,7 +215,7 @@ margin: 0 0 auto 0;
 }
 
 form {
-    margin-top: 10% !important;
+    margin-top: 5% !important;
     margin-left: 0 !important;
     margin-right: 48px !important;
 }
@@ -447,22 +447,20 @@ form {
     margin-top: 20px;
 }
 
-.form-example {
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.form-example * {
-    margin: 0 !important;
-}
-
 input {
     border : #333333 solid 1px;
     border-radius: 15px;
     height: 25px;
     width: 300px;
 }
+#pck, #avais, #demande {
+    width : 150px;
+}
 
 #SubscribeButton {
     margin-top: 10px !important;
-    margin-left: 50px!important;
+}
+
+textarea {
+    border: 2px black solid;
 }

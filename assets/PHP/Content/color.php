@@ -1,4 +1,8 @@
 <?php
+include './assets/PHP/Head/head.php';
+echo"<body>";
+include "./assets/PHP/Object/navBar.php";
+echo"<h1>";
 
 $_Col1 = rand(1, 3);
 $_Col2 = rand(1, 3);
@@ -45,4 +49,7 @@ elseif($_ColStr1 == "yellow" && $_ColStr2 == "red" || $_ColStr1 == "red" && $_Co
 else{
     echo " red";
 }
+echo"</h1>";
+include './assets/PHP/Object/form.php';
+echo"</body></html>";
 ?>

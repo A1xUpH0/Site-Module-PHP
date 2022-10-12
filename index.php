@@ -21,11 +21,6 @@ else{
     $title = "Module PHP David | COLOR";
     $desc = "Color | Une page permettant de choisir aléatoirement 2 couleurs et de 
     les fusionner pour en créer une nouvelle.";
-    include './assets/PHP/Head/head.php';
-    echo"<body>";
-    include "./assets/PHP/Object/navBar.php";
-    echo"<h1>";
-    include './color.php';
-    echo"</h1></body></html>";
+    include './assets/PHP/Content/color.php';
 }
 ?>
