@@ -51,5 +51,6 @@ else{
 }
 echo"</h1>";
 include './assets/PHP/Object/form.php';
+include './assets/PHP/Content/calcul.php';
 echo"</body></html>";
 ?>

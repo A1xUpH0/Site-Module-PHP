@@ -214,12 +214,6 @@ margin: 0 0 auto 0;
     margin-top: 0;
 }
 
-form {
-    margin-top: 5% !important;
-    margin-left: 0 !important;
-    margin-right: 48px !important;
-}
-
 .form-floating {
     margin: 2.5% 2.5% !important;
     width: 95% !important;
@@ -336,9 +330,7 @@ button {
 }
 
 @media (max-width: 900px) {
-    form {
-        margin-top: 5% !important;
-    }
+
 
     input.form-control {
         height: 40px !important;
@@ -445,6 +437,7 @@ button {
 
 form {
     margin-top: 20px;
+    margin-left: 20px !important;
 }
 
 input {
@@ -452,6 +445,7 @@ input {
     border-radius: 15px;
     height: 25px;
     width: 300px;
+    margin-top: 15px;
 }
 #pck, #avais, #demande {
     width : 150px;
@@ -463,4 +457,12 @@ input {
 
 textarea {
     border: 2px black solid;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#one, #two, #three {
+    width: 150px !important;
 }

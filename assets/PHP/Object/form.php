@@ -1,48 +1,44 @@
-<form action="" method="get" class="form-example">
+<form action="" method="post" class="form-example">
     <div class="form-example">
         <label for="gender">Gender : </label>
         <select name="gender" id="gender">
-            <option value="mr">Mr.</option>
-            <option value="mrs">Mrs.</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
         </select>
     </div>
     <div class="form-example">
-        <label for="Fname">Enter your first name: </label>
-        <input type="text" name="Fname" id="Fname">
+        <input type="text" name="Fname" id="Fname" placeholder=" First name">
+            </div>
+    <div class="form-example">
+        <input type="text" name="Lname" id="Lname" placeholder=" Last name">
     </div>
     <div class="form-example">
-        <label for="Lname">Enter your last name: </label>
-        <input type="text" name="Lname" id="Lname">
-    </div>
-    <div class="form-example">
-        <label for="email">Enter your email: </label>
-        <input type="email" name="email" id="emailB">
+        <input type="email" name="email" id="emailB" placeholder=" Email Address">
     </div>
     <div class="form-example">
         <label for="radio">Reason of contact : </label>
         <div>
-            <input type="radio" id="pck" name="reason" value="wallah">
-            <label for="wallah">pck wallah</label>
+            <input type="radio" id="one" name="reason" value="Option One">
+            <label for="Option One">Option #1</label>
         </div>
 
         <div>
-            <input type="radio" id="avais" name="reason" value="envi">
-            <label for="envi">j'avais envi</label>
+            <input type="radio" id="two" name="reason" value="Option Two">
+            <label for="Option Two">Option #2</label>
         </div>
 
         <div>
-            <input type="radio" id="demande" name="reason" value="ASP">
-            <label for="ASP">demande d'ASP</label>
+            <input type="radio" id="three" name="reason" value="Option Three">
+            <label for="Option Three">Option #3</label>
         </div>
     </div>
     <div class="form-example">
-        <label for="mess">Your message : </label>
-
         <textarea id="mess" name="mess"
-                  rows="5" cols="33">
+                  rows="5" cols="33" placeholder=" Your message">
 </textarea>
     </div>
     <div class="form-example">
         <input id="SubscribeButton" type="submit" value="Subscribe!">
     </div>
+    <p id="errorMessage"> <?php echo ($ErrorMess); ?> </p>
 </form>

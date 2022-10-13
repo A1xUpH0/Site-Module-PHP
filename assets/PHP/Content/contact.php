@@ -6,7 +6,7 @@ include "./assets/PHP/Object/navBar.php";
     <main>
 			<div id="Horizontal">
 				<div class="BlockFull">
-					<!--<form
+					<form
 						action=""
 						id="formMess"
 						class="row g-3 needs-validation"
@@ -59,7 +59,7 @@ include "./assets/PHP/Object/navBar.php";
 								Send Message
 							</button>
 						</div>
-					</form>-->
+					</form>
                 <?php include "./assets/PHP/Object/form.php";?>
 
                 </div>
