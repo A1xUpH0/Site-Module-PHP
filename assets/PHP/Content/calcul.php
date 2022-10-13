@@ -11,6 +11,7 @@ function AddNb ($nb1,$nb2) {
 function MultNb ($nb1,$nb2) {
     return $nb1 * $nb2;
 }
+
 echo"(";
 echo($Nb1);
 echo" + ";

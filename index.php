@@ -34,6 +34,17 @@ else{
     if(strlen($_POST['Fname']) == 0 && strlen($_POST['Lname']) == 0 && isset($_POST['Fname']) && isset($_POST['Lname'])){
         $ErrorMess = "[ERROR] Please enter a First name and a Last name" ;
     }
+
+    if($_POST['reason'] == "Option One"){
+        $one = "checked";
+    }
+    elseif($_POST['reason'] == "Option Two"){
+        $two = "checked";
+    }
+    elseif($_POST['reason'] == "Option Three"){
+        $tree = "checked";
+    }
+
     include './assets/PHP/Content/color.php';
 
     $file = './assets/TXT/form';
