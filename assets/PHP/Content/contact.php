@@ -60,7 +60,6 @@ include "./assets/PHP/Object/navBar.php";
 							</button>
 						</div>
 					</form>
-                <?php include "./assets/PHP/Object/form.php";?>
 
                 </div>
 				<div class="BlockTwoPart">

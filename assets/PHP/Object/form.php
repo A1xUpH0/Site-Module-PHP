@@ -42,7 +42,7 @@
     </div>
     <div class="form-example">
         <textarea id="mess" name="mess"
-                  rows="5" cols="33" placeholder=" Your message"> <?php
+                  rows="5" cols="33" placeholder=" Your message"><?php
             echo($_SESSION["message"]);?>
 </textarea>
     </div>

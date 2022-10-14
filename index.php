@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 
 if($_GET['page'] == 'home'){
     $title = "Module PHP David | HOMEPAGE";
@@ -23,7 +22,7 @@ else{
     $desc = "Color | Une page permettant de choisir aléatoirement 2 couleurs et de 
     les fusionner pour en créer une nouvelle.";
 
-    
+
     if($_POST["reason"] == "Option One"){
         $one = "checked";
     }
@@ -51,7 +50,8 @@ else{
     if(!filter_var($_SESSION["email"],FILTER_VALIDATE_EMAIL) && isset($_SESSION["email"])){
         $ErrorMess = "[ERROR] Please enter a valid Email" ;
     }
-    if(strlen($_SESSION["firstName"]) == 0 && strlen( $_SESSION["lastName"]) == 0 && isset($_SESSION["firstName"]) && isset( $_SESSION["lastName"])){
+
+    if(strlen($_SESSION["firstName"]) == 0 && isset($_POST["Fname"]) || strlen( $_SESSION["lastName"]) == 0 && isset( $_POST["Lname"])){
         $ErrorMess = "[ERROR] Please enter a First name and a Last name" ;
     }
 
@@ -79,7 +79,7 @@ else{
     $current .= "\n";
     $current .= $_SESSION["reason"];
     $current .= "\n";
-    $current .= strval($_SESSION["message"]);
+    $current .= ($_SESSION["message"]);
 
     file_put_contents($file, $current);
 }
