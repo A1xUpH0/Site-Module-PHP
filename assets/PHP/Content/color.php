@@ -52,5 +52,6 @@ else{
 echo"</h1>";
 include './assets/PHP/Object/form.php';
 include './assets/PHP/Content/calcul.php';
+include './assets/PHP/Content/breakWord.php';
 echo"</body></html>";
 ?>
