@@ -2284,7 +2284,6 @@ button {
     margin-left: 60px !important;
     margin-top: 1vh; } }
 @media (max-width: 900px) {
-
   input.form-control {
     height: 40px !important;
     padding: 11px 12px !important; }
@@ -2356,14 +2355,14 @@ button {
     margin-bottom: 5vh; } }
 form {
   margin-top: 20px;
-  margin-left: 20px; !important}
+  margin-left: 20px !important; }
 
 input {
   border: #333333 solid 1px;
   border-radius: 15px;
   height: 25px;
   width: 300px;
-  margin-top: 15px;}
+  margin-top: 15px; }
 
 #pck, #avais, #demande {
   width: 150px; }
@@ -2375,11 +2374,9 @@ textarea {
   border: 2px black solid; }
 
 #errorMessage {
-  color: red;
-}
+  color: red; }
 
 #one, #two, #three {
-  width: 150px !important;
-}
+  width: 150px !important; }
 
 /*# sourceMappingURL=custom.css.map */

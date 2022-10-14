@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if($_GET['page'] == 'home'){
     $title = "Module PHP David | HOMEPAGE";
@@ -22,26 +23,45 @@ else{
     $desc = "Color | Une page permettant de choisir aléatoirement 2 couleurs et de 
     les fusionner pour en créer une nouvelle.";
 
-    if(strlen($_POST['mess']) < 5 && isset($_POST['mess'])){
+    
+    if($_POST["reason"] == "Option One"){
+        $one = "checked";
+    }
+    elseif($_POST["reason"] == "Option Two"){
+        $two = "checked";
+    }
+    elseif($_POST["reason"] == "Option Three"){
+        $three = "checked";
+    }
+
+    $_SESSION["gender"]=$_POST['gender'];
+    $_SESSION["firstName"]=$_POST['Fname'];
+    $_SESSION["lastName"]=$_POST['Lname'];
+    $_SESSION["email"]=$_POST['email'];
+    $_SESSION["reason"]=$_POST['reason'];
+    $_SESSION["tabReason"] = array(0 => $one, 1 => $two, 2 => $three);
+    $_SESSION["message"]=$_POST['mess'];
+
+    if(strlen($_SESSION["message"]) < 5 && isset($_SESSION["message"])){
         $ErrorMess = "[ERROR] Please enter a message" ;
     }
-    if(strlen($_POST['reason']) == 0 && isset($_POST['mess'])){
+    if(strlen($_SESSION["reason"]) == 0 && isset($_SESSION["message"])){
         $ErrorMess = "[ERROR] Please select a reason" ;
     }
-    if(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL) && isset($_POST['email'])){
+    if(!filter_var($_SESSION["email"],FILTER_VALIDATE_EMAIL) && isset($_SESSION["email"])){
         $ErrorMess = "[ERROR] Please enter a valid Email" ;
     }
-    if(strlen($_POST['Fname']) == 0 && strlen($_POST['Lname']) == 0 && isset($_POST['Fname']) && isset($_POST['Lname'])){
+    if(strlen($_SESSION["firstName"]) == 0 && strlen( $_SESSION["lastName"]) == 0 && isset($_SESSION["firstName"]) && isset( $_SESSION["lastName"])){
         $ErrorMess = "[ERROR] Please enter a First name and a Last name" ;
     }
 
-    if($_POST['reason'] == "Option One"){
+    if($_SESSION["reason"] == "Option One"){
         $one = "checked";
     }
-    elseif($_POST['reason'] == "Option Two"){
+    elseif($_SESSION["reason"] == "Option Two"){
         $two = "checked";
     }
-    elseif($_POST['reason'] == "Option Three"){
+    elseif($_SESSION["reason"] == "Option Three"){
         $tree = "checked";
     }
 
@@ -49,17 +69,17 @@ else{
 
     $file = './assets/TXT/form';
 
-    $current = $_POST['gender'];
+    $current = $_SESSION["gender"];
     $current .= " ";
-    $current .= $_POST['Fname'];
+    $current .= $_SESSION["firstName"];
     $current .= " ";
-    $current .= $_POST['Lname'];
+    $current .=  $_SESSION["lastName"];
     $current .= "\n";
-    $current .= $_POST['email'];
+    $current .= $_SESSION["email"];
     $current .= "\n";
-    $current .= $_POST['reason'];
+    $current .= $_SESSION["reason"];
     $current .= "\n";
-    $current .= strval($_POST['mess']);
+    $current .= strval($_SESSION["message"]);
 
     file_put_contents($file, $current);
 }
