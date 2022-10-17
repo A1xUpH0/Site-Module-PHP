@@ -48,4 +48,6 @@ echo "</br>";
 printWordReverse($Word);
 echo "</br>";
 printWordVowels($Word);
+echo "</br>";
+echo "</br>";
 ?>
